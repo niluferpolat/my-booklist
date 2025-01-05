@@ -50,7 +50,11 @@ function HomeScreen() {
       }}>
       <Button onPress={()=>setVisible(true)} color={'#A888B5'} title='Kitap Ekle'></Button>
       </View>
-    
+      <FlatList
+        data={docs}
+        renderItem={({item}) => <BookList item={item} />}
+        keyExtractor={item => item.name}
+      />
     </ScrollView>
   );
 }
