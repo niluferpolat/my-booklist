@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "746294332982",
+    "project_id": "booklist-11524",
+    "storage_bucket": "booklist-11524.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746294332982:android:d2c27ad19c364e2e7f5297",
+        "android_client_info": {
+          "package_name": "com.nilufer.polat.mybooklist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkRO5hyVuP4LYucShOAYbQFUsWsLuF82k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

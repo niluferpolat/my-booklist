@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "my-booklist",
+    "displayName":"Books",
     "slug": "my-booklist",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,42 +10,37 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nilufer.polat.mybooklist"
     },
     "android": {
+        "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.nilufer.polat.mybooklist"
     },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover", 
+      "backgroundColor": "#fff"
+    },
     "web": {
       "bundler": "metro",
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
-    ],
     "experiments": {
       "typedRoutes": true
     },
     "extra": {
-      "router": {
-        "origin": false
-      },
       "eas": {
         "projectId": "56864e81-d894-4fce-bb31-85cd9d0d151f"
       }
-    }
+    },
+    "plugins": [
+      "@react-native-firebase/app"
+    ]
   }
 }
